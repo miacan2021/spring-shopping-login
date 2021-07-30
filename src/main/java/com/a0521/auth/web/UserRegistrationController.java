@@ -11,7 +11,7 @@ import com.a0521.auth.service.UserService;
 import com.a0521.auth.web.dto.UserRegistrationDto;
 
 @Controller
-@RequestMapping("/registration")
+@RequestMapping("registration")
 public class UserRegistrationController {
 
 	private UserService userService;
@@ -35,6 +35,6 @@ public class UserRegistrationController {
 	@PostMapping
 	public String registerUserAccount(@ModelAttribute("user") UserRegistrationDto registrationDto) {
 		userService.save(registrationDto);
-		return "redirect:/registration?success";
+		return "redirect:registration?success";
 	}
 }

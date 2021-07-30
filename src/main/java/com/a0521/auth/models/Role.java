@@ -1,3 +1,4 @@
+
 package com.a0521.auth.models;
 
 import javax.persistence.Entity;
@@ -9,11 +10,11 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "roles")
 public class Role {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String name;
+	private String name; // ["ROLE_USER"],["ROLE_ADMIN"]
 	
 	public Role() {
 		
@@ -23,7 +24,6 @@ public class Role {
 		super();
 		this.name = name;
 	}
-	
 	public Long getId() {
 		return id;
 	}
@@ -42,6 +42,4 @@ public class Role {
 		return "Role [id=" + id + ", name=" + name + "]";
 	}
 	
-	
-
 }
