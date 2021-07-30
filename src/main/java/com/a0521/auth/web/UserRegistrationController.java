@@ -1,3 +1,4 @@
+
 package com.a0521.auth.web;
 
 import org.springframework.stereotype.Controller;
@@ -11,7 +12,7 @@ import com.a0521.auth.service.UserService;
 import com.a0521.auth.web.dto.UserRegistrationDto;
 
 @Controller
-@RequestMapping("registration")
+@RequestMapping("/registration")
 public class UserRegistrationController {
 
 	private UserService userService;
