@@ -14,7 +14,7 @@ public class MainController {
 		return "auth/login";
 	}
 	
-	@GetMapping("")
+	@GetMapping("/")
 	public String home(Model model) {
 		model.addAttribute("title", "Welcome");
 		return "main/landing";
